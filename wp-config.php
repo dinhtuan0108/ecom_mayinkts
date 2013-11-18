@@ -22,13 +22,13 @@
         'user' => 'hoatuoih',
         'pass' => 't2Q9gFg3lVIC',
 		*/
-define('DB_NAME', 'hoatuoih_hoadooto');
+define('DB_NAME', 'ecom_mayinkts');
 
 /** MySQL database username */
-define('DB_USER', 'hoatuoih');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 't2Q9gFg3lVIC');
+define('DB_PASSWORD', 'ltt123');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
