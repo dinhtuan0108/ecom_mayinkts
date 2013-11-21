@@ -93,8 +93,6 @@ body {
 #main {
 width: 906px;
 	margin: 0 auto;
-	background-color: #EAEAEA;
-    padding:5px !important;
 }
 #main-fullwidth {
 	max-width:  960px;
@@ -126,14 +124,17 @@ width: 906px;
 }
 /*sidebar*/
 #sidebar-primary, #sidebar-secondary  {
-	width: 200px;
+	width: 270px;
+    height: 280px;
+    border: 1px solid #DEDEDE;
 }
-#sidebar-primary {
-	margin-left: -975px;
+#sidebar-primary,#sidebar-secondary  p{
+	width:270px;
+    padding: 17px;
+    margin-left: 25px;
 }
 #content {
-	width: 760px;
-	margin-left: 214px;
+	width: 575px;
 	background: #FFF;
 }
 
@@ -479,7 +480,7 @@ div.images {
 	display: none !important;
 }
 
-/*=============================*/
+/*==============Menu Homepage===============*/
 .prNav {
     list-style-type: none;
     display: inline;
@@ -496,25 +497,17 @@ div.images {
     -webkit-border-radius:10px;
     box-shadow: 0 0 5px #B4B4B4;
 }
-
-#main-top-block img{
-    
+#main-top-block img{  
     border-radius: 10px 10px 0px 0px;
 }
-
-#index-menu{
-    
-    
-}
-
 #gNav {
     clear: both;
     height: 142px;
     margin-top:2px;
+    list-style-type: none;
 }
 #gNav li {
-    float: left;
-    
+    float: left;   
 }
 #gNav a {
     background-color: rgba(0, 0, 0, 0);
@@ -567,7 +560,7 @@ div.images {
     width: 625px;
 }
 
-/****************second nav*************/
+/****************Menu Other page*************/
 #gNav2 {
     clear: both;
     height: 50px;
@@ -612,3 +605,8 @@ div.images {
 .page-products #gNavProducts2 a, .page-ss #gNavSs2 a, .page-support #gNavSupport2 a, .page-dl #gNavDl2 a, .page-about #gNavAbout2 a {
     background-position: left -50px;
 }
+
+
+/*****Right sitebar Home page ************/
+
+
