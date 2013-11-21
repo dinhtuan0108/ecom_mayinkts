@@ -1,14 +1,18 @@
 body {
-	background: url('../images/body.png');
+	background-color: #FFF;
 }
 #container {
-	width: 1000px;
-	box-shadow: 0 0 10px #000;
+    width: 906px;
+	
 }
 /*header*/
 #header {
 	padding: 0;
 	height: auto;
+}
+#header-block{
+    width: 906px;
+    
 }
 .primary-menu-container {
 	width: 100%;
@@ -61,6 +65,7 @@ body {
 }
 .nav-search {
 	margin-right: 10px;
+    margin-top: 20px;
 }
 .nav-search #s {
 	margin-top: 5px;
@@ -72,22 +77,24 @@ body {
 	outline: none;
 }
 .nav-search #searchsubmit {
-	margin-left: -30px;
+	margin-left: 10px;
 	border: none;
 	background: url('../images/ico-search.gif') no-repeat;
 	padding: 4px 10px 0;
 	cursor: pointer;
 	float: left;
 	margin-top: 8px;
+    width: 61px;
 }
 /*content*/
 .slider-container {
 
 }
 #main {
-	width: 970px;
+width: 906px;
 	margin: 0 auto;
 	background-color: #EAEAEA;
+    padding:5px !important;
 }
 #main-fullwidth {
 	max-width:  960px;
@@ -105,7 +112,7 @@ body {
 	
 }
 .footer-widgets-inner {
-	width: 1000px;
+    width: 906px;
 	margin: 0 auto;
 	text-align: left;
 }
@@ -257,7 +264,7 @@ ul.products > li {
 	background: #24B3E4 !important;
 }
 .rslides img, .nivoSlider img {
-	width: 1000px !important;
+	width: 906px!important;
 }
 /*footer*/
 #footer-widgets .widget_text p {
@@ -470,4 +477,138 @@ div.images {
 }
 .ppt, .pp_description, .pp_gallery{
 	display: none !important;
+}
+
+/*=============================*/
+.prNav {
+    list-style-type: none;
+    display: inline;
+}
+.prNav li{
+   float:  left;
+   margin: 10px;    
+}
+#main-top-block {
+    height: 463px;
+    width: 906px;
+    border: solid 1px #B4B4B4;
+    -moz-border-radius:10px; 
+    -webkit-border-radius:10px;
+    box-shadow: 0 0 5px #B4B4B4;
+}
+
+#main-top-block img{
+    
+    border-radius: 10px 10px 0px 0px;
+}
+
+#index-menu{
+    
+    
+}
+
+#gNav {
+    clear: both;
+    height: 142px;
+    margin-top:2px;
+}
+#gNav li {
+    float: left;
+    
+}
+#gNav a {
+    background-color: rgba(0, 0, 0, 0);
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 142px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 150px;
+}
+#gNav a:hover, #gNav .on a {
+    background-position: left -142px;
+}
+
+#gNavProducts a {
+    background-image: url("../images/nav-products.gif");
+    width: 207px;
+    margin-left: -2px !important;
+    padding-right: 0.5px;
+    
+}
+#gNavSs a {
+   background-image: url("../images/nav-ss.gif");
+    width: 230px;
+}
+#gNavSupport a {
+    background-image: url("../images/nav-support.gif");
+    padding-right: 1px;
+}
+#gNavDl a {
+    background-image: url("../images/nav-dl.gif");
+    width: 155px;
+    padding-right: 1px;
+}
+#gNavAbout a {
+    background-image: url("../images/nav-about.gif");
+    width: 158px;
+    margin-left: -1px !important;
+}
+.page-products #gNavProducts a, .page-ss #gNavSs a, .page-support #gNavSupport a, .page-dl #gNavDl a, .page-about #gNavAbout a {
+    background-position: left -142px;
+}
+#gHdrBox {
+    color: #999999;
+    float: right !important;
+    margin-right: 0;
+    margin-top: 30px;
+    text-align: right;
+    width: 625px;
+}
+
+/****************second nav*************/
+#gNav2 {
+    clear: both;
+    height: 50px;
+    width: 906px;
+}
+#gNav2 li {
+    float: left;
+}
+#gNav2 a {
+    background-color: rgba(0, 0, 0, 0);
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 150px;
+}
+#gNav2 a:hover, #gNav .on a {
+    background-position: left -50px;
+}
+#gNavHome a {
+    background-image: url("../images/gnav-home.gif");
+    width: 153px;
+}
+#gNavProducts2 a {
+    background-image: url("../images/gnav-products.gif");
+}
+#gNavSs2 a {
+    background-image: url("../images/gnav-ss.gif");
+}
+#gNavSupport2 a {
+    background-image: url("../images/gnav-support.gif");
+}
+#gNavDl2 a {
+    background-image: url("../images/gnav-dl.gif");
+}
+#gNavAbout2 a {
+    background-image: url("../images/gnav-about.gif");
+    width: 153px;
+}
+.page-products #gNavProducts2 a, .page-ss #gNavSs2 a, .page-support #gNavSupport2 a, .page-dl #gNavDl2 a, .page-about #gNavAbout2 a {
+    background-position: left -50px;
 }
