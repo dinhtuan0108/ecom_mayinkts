@@ -9,7 +9,7 @@
             */
             $theme->hook('sidebar_primary');
         }
-        $theme->hook("sidebar_primary_after");
+        //$theme->hook("sidebar_primary_after");
     ?>
     
 </div><!-- #sidebar-primary -->

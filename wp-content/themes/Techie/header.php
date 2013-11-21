@@ -84,11 +84,11 @@
         
     	<div id="index-menu">
     		<ul id="gNav">
-            <li id="gNavProducts"><a href="/shop"><img src="/img/nav-img-products.gif" alt="" /></a></li>
-            <li id="gNavSs"><a href="/category/dich-vu"><img src="/img/nav-img-ss.gif" alt="" /></a></li>
-            <li id="gNavSupport"><a href="/cham-soc-khach-hang"><img src="/img/nav-img-support.gif" alt=""  /></a></li>
-            <li id="gNavDl"><a href="/category/tin-tuc"><img src="/img/nav-img-dl.gif" alt=""  /></a></li>
-            <li id="gNavAbout"><a href="/lien-he"><img src="/img/nav-img-about.gif" alt="" width="" /></a></li>
+            <li id="gNavProducts"><a href="/shop"></a></li>
+            <li id="gNavSs"><a href="/category/dich-vu"></a></li>
+            <li id="gNavSupport"><a href="/cham-soc-khach-hang"></a></li>
+            <li id="gNavDl"><a href="/category/tin-tuc"></a></li>
+            <li id="gNavAbout"><a href="/lien-he"></a></li>
             </ul>
 
     	</div>
@@ -97,29 +97,36 @@
   <?php }else{?>
         <div id="second-nav">
             <ul id="gNav2">
-				<li id="gNavHome"> <a href="/"> <img height="50" width="153" alt="Home" src="/common/img/header/gnav-img-home.gif" /> </a> </li>
-				<li id="gNavProducts2"> <a href="/shop"> <img height="50" width="150" alt="Products" src="/common/img/header/gnav-img-products.gif" /> </a> </li>
-				<li id="gNavSs2"> <a href="/category/dich-vu"> <img height="50" width="150" alt="Services &amp; Solutions" src="/common/img/header/gnav-img-ss.gif" /> </a> </li>
-				<li id="gNavSupport2"> <a href="/cham-soc-khach-hang"> <img height="50" width="150" alt="Support" src="/common/img/header/gnav-img-support.gif" /> </a> </li>
-				<li id="gNavDl2"> <a href="/category/tin-tuc"> <img height="50" width="150" alt="Downloads" src="/common/img/header/gnav-img-dl.gif" /> </a> </li>
-				<li id="gNavAbout2"> <a href="/lien-he"> <img height="50" width="153" alt="About RICOH" src="/common/img/header/gnav-img-about.gif" /> </a> </li>
+				<li id="gNavHome"> <a href="/"></a> </li>
+				<li id="gNavProducts2"> <a href="/shop"></a> </li>
+				<li id="gNavSs2"> <a href="/category/dich-vu"></a> </li>
+				<li id="gNavSupport2"> <a href="/cham-soc-khach-hang"> </a> </li>
+				<li id="gNavDl2"> <a href="/category/tin-tuc"> </a> </li>
+				<li id="gNavAbout2"> <a href="/lien-he"></a> </li>
 			</ul>
             
-           <?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>
-			<ul id="breadCrumb">
-				<li><a href="/">Home</a><span>&gt;</span></li>
-			</ul>
-        </div>
         
-        <!--<div class="primary-menu-container pull-left">
-			<div style="width: 906px;">
-				<div class="pull-left">
-					<?php if($theme->display('menu_primary')) {   $theme->hook('menu_primary');  } ?>
-				</div>
-			
-		
-			</div>
-		</div>-->
+        </div>
+        <?php
+        $currentUri = $_SERVER["REQUEST_URI"];
+        
+        $bannerImages = array(
+            '/shop'=>array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Products'),
+            '/category/dich-vu' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-services_solutions.jpg','title'=>'Service'),
+            '/cham-soc-khach-hang' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-support.jpg','title'=>'Support'),
+            '/category/tin-tuc' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-support.jpg','title'=>'News'),
+            '/lien-he' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-support.jpg','title'=>'Contact')
+        ); 
+        
+        ?>
+        <?php if($currentUri){?>
+            <ul id="breadCrumb">
+				<li><a href="/">Home ></a><span><?php echo $bannerImages[$currentUri]['title']; ?></span></li>
+			</ul>
+            <img src="<?php echo $bannerImages[$currentUri]['imageCorver'] ?>" alt="Banner Image" class="banner-image"/>
+            
+        <?php } ?>
+       
         
         
   <?php }?>
