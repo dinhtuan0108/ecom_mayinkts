@@ -181,11 +181,11 @@
 	//change product to 4 columns
 	if (!function_exists('loop_columns')) {
 		function loop_columns() {
-			return 4; // 4 products per row
+			return 3; // 4 products per row
 		}
 	}
 	function ewp_woo_shop_columns( $columns ) {
-    	return 4;
+    	return 3;
 	}
 	add_filter( 'loop_shop_columns', 'ewp_woo_shop_columns' );
 	
