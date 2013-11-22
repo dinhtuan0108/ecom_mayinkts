@@ -510,6 +510,7 @@ div.images {
 #gNav li {
     float: left;   
 }
+
 #gNav a {
     background-color: rgba(0, 0, 0, 0);
     background-position: left top;
@@ -518,7 +519,7 @@ div.images {
     height: 142px;
     overflow: hidden;
     text-indent: -9999px;
-    width: 150px;
+    width: 154px !important;
 }
 #gNav a:hover, #gNav .on a {
     background-position: left -142px;
@@ -545,7 +546,7 @@ div.images {
     padding-right: 1px;
 }
 #gNavAbout a {
-    background-image: url("../images/nav-about.gif");
+    background-image: url("../images/nav-ss.gif");
     width: 158px;
     margin-left: -1px !important;
 }
@@ -647,5 +648,14 @@ div.images {
 }
 .woocommerce-pagination ul{
     margin-top: 20px !important;
+}
+
+
+/**********foooter**********/
+#footer-main{
+    width: 904px;
+    height: 50px;
+    border: 1px solid #B4B4B4;
+    
 }
 
