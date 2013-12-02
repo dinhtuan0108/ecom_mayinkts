@@ -28,7 +28,7 @@ define('DB_NAME', 'ecom_mayinkts');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'ltt123');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
