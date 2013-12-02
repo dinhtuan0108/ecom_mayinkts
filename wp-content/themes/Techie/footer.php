@@ -1,48 +1,6 @@
 <?php global $theme; ?>
     
-<?php if($theme->display('footer_widgets')) { ?>
-    <div id="footer-widgets" class="clearfix">
-    	<div class="footer-widgets-inner">
-	        <?php
-	        /**
-	        * Footer  Widget Areas. Manage the widgets from: wp-admin -> Appearance -> Widgets 
-	        */
-	        /*
-	        ?>
-	        <div class="footer-widget-box">
-	            <?php
-	                if(!dynamic_sidebar('footer_1')) {
-	                    $theme->hook('footer_1');
-	                }
-	            ?>
-	        </div>
-	        
-	        <div class="footer-widget-box">
-	            <?php
-	                if(!dynamic_sidebar('footer_2')) {
-	                    $theme->hook('footer_2');
-	                }
-	            ?>
-	        </div>
-	        
-	        <div class="footer-widget-box footer-widget-box-last">
-	            <?php
-	                if(!dynamic_sidebar('footer_3')) {
-	                    $theme->hook('footer_3');
-	                }
-	            ?>
-	        </div>		
-			*/ ?>
-			<?php
-                if(!dynamic_sidebar('footer_1')) {
-                    $theme->hook('footer_1');
-                }
-	       ?>
-		</div>
 
-        
-    </div>
-<?php  } ?>
 	<?php /*
     <div id="footer">
     
@@ -60,6 +18,37 @@
     </div><!-- #footer -->
     */ ?>
 </div><!-- #container -->
+
+<?php if($theme->display('footer_widgets')) { ?>
+    <div id="footer-widgets" class="clearfix">
+    	<div class="footer-widgets-inner">
+	        <?php
+	        /**
+	        * Footer  Widget Areas. Manage the widgets from: wp-admin -> Appearance -> Widgets 
+	        */
+	        ?>
+	        <div class="footer-widget-box">
+	            <?php
+	                if(!dynamic_sidebar('footer_1')) {
+	                    $theme->hook('footer_1');
+	                }
+	            ?>
+	        </div>
+	        
+	        
+	        <div class="footer-widget-box footer-widget-box-last">
+	            <?php
+	                if(!dynamic_sidebar('footer_3')) {
+	                    $theme->hook('footer_3');
+	                }
+	            ?>
+	        </div>		
+		</div>
+
+        
+    </div>
+<?php  } ?>
+
 
 <?php wp_footer(); ?>
 <?php $theme->hook('html_after'); ?>
