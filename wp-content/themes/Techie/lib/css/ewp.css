@@ -124,7 +124,6 @@ body {
 /*sidebar*/
 #sidebar-primary, #sidebar-secondary  {
 	width: 270px;
-    height: 280px;
     border: 1px solid #DEDEDE;
 }
 #sidebar-primary,#sidebar-secondary  p{
@@ -169,12 +168,13 @@ h1.product_title {
 .widget-container .widget > ul, .widget-container .widget > div {
 
 }
+#menu-side-menu {
+	border-radius: 5px;
+	overflow: hidden;
+}
 .widget-container .widget  ul  li.menu-item  a {
-	background: -webkit-linear-gradient(top, #fff, #e0e0e0);
-	background: -moz-linear-gradient(top, #fff, #e0e0e0);
-	background: -ms-linear-gradient(top, #fff, #e0e0e0);
-	background: -o-linear-gradient(top, #fff, #e0e0e0);
-	color: #000;
+	background: url('../images/menu_bg.gif');
+	color: #FFF !important;
 	text-align: left;
 	padding: 10px;
 	font-size: 13px;
@@ -188,6 +188,9 @@ h1.product_title {
 .widget ul li {
 	margin: 0;
 	padding: 0;
+}
+.widget-container .widget  ul  li.menu-item  a:hover {
+	background: url('../images/menu_hover_bg.gif');
 }
 .widget-container .widget  ul  li.menu-item a, .widget-container .widget  ul  li.menu-item:hover a {
 	color: #000;
