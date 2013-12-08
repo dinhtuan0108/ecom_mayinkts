@@ -542,7 +542,6 @@ div.images {
     height: 142px;
     overflow: hidden;
     text-indent: -9999px;
-    width: 154px !important;
 }
 #gNav a:hover, #gNav .on a {
     background-position: left -142px;
@@ -557,11 +556,12 @@ div.images {
 }
 #gNavSs a {
    background-image: url("../images/nav-ss.gif");
-    width: 230px;
+    width: 225px;
 }
 #gNavSupport a {
     background-image: url("../images/nav-support.gif");
-    padding-right: 1px;
+    padding-right: 0px;
+    width: 155px;
 }
 #gNavDl a {
     background-image: url("../images/nav-dl.gif");
@@ -570,7 +570,7 @@ div.images {
 }
 
 #gNavAbout a {
-    background-image: url("../images/nav-ss.gif");
+    background-image: url("../images/nav-about.gif");
     width: 158px;
     margin-left: -1px !important;
 }
