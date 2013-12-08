@@ -51,7 +51,7 @@
                                 <a href="<?php echo home_url(); ?>/sitemap">Sitemap</a>
                                 </li>
                             </ul>
-					        <input type="text" value="" name="s" id="s" placeholder="Tìm kiếm...." />
+					        <input type="text" value="" name="s" id="s" placeholder="Tìm kiếm...."/>
 					        <input type="submit" id="searchsubmit" value="" />
 					    </div>
 					</form>					
@@ -104,7 +104,6 @@
 				<li id="gNavDl2"> <a href="/category/tin-tuc"> </a> </li>
 				<li id="gNavAbout2"> <a href="/lien-he"></a> </li>
 			</ul>
-            
         
         </div>
         <?php
@@ -115,7 +114,14 @@
             '/category/dich-vu' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-services_solutions.jpg','title'=>'Service'),
             '/cham-soc-khach-hang' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-support.jpg','title'=>'Support'),
             '/category/tin-tuc' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-support.jpg','title'=>'News'),
-            '/lien-he' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-support.jpg','title'=>'Contact')
+            '/lien-he' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-support.jpg','title'=>'Contact'),
+        	'/danh-muc/may-can-mang-mo' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Máy cán màng mờ'),
+        	'/danh-muc/konica-minolta' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Konica- Minolta'),
+        	'/danh-muc/ricoh' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Ricoh'),
+        	'/danh-muc/offset' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Offset'),
+        	'/danh-muc/may-xen-thanh-pham' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Máy xén thành phẩm'),
+        	'/danh-muc/muc-in' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Mực in'),
+        	'/danh-muc/linh-kien' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Linh kiện'),
         ); 
         
         ?>
@@ -125,6 +131,12 @@
 			</ul>
             <img src="<?php echo $bannerImages[$currentUri]['imageCorver'] ?>" alt="Banner Image" class="banner-image"/>
             
+        <?php //var_dump($currentUri);
+        }else{?>
+        	<ul id="breadCrumb">
+				<li><a href="/">Home ></a><span><?php echo $bannerImages[$currentUri]['title']; ?></span></li>
+			</ul>
+        	<img src="/wp-content/uploads/2013/11/img-main-products.jpg" alt="Banner Image" class="banner-image"/>
         <?php } ?>
        
         
