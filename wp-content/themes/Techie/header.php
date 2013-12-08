@@ -45,10 +45,10 @@
 					    <div>
                             <ul class="prNav">
                                 <li>
-                                <a href="<?php echo home_url(); ?>/lien-he">Contact</a>
+                                <a href="<?php echo home_url(); ?>/lien-he">Liên hệ</a>
                                 </li>
                                  <li>
-                                <a href="<?php echo home_url(); ?>/sitemap">Sitemap</a>
+                                <a href="<?php echo home_url(); ?>/subscribe">Đăng ký nhận bản tin</a>
                                 </li>
                             </ul>
 					        <input type="text" value="" name="s" id="s" placeholder="Tìm kiếm...."/>
@@ -62,7 +62,7 @@
 		            <?php $theme->hook('social_profiles'); ?>
 		        </div>
 	            
-	        </div><!-- .header-right -->		
+	        </div><!-- .header-right -->
 		</div>
 	
         
@@ -125,22 +125,14 @@
         ); 
         
         ?>
-        <?php if($currentUri){?>
+        <?php if($bannerImages[$currentUri]['imageCorver'] != ''){?>
             <ul id="breadCrumb">
 				<li><a href="/">Home ></a><span><?php echo $bannerImages[$currentUri]['title']; ?></span></li>
 			</ul>
             <img src="<?php echo $bannerImages[$currentUri]['imageCorver'] ?>" alt="Banner Image" class="banner-image"/>
-            
-        <?php //var_dump($currentUri);
-        }else{?>
-        	<ul id="breadCrumb">
-				<li><a href="/">Home ></a><span><?php echo $bannerImages[$currentUri]['title']; ?></span></li>
-			</ul>
-        	<img src="/wp-content/uploads/2013/11/img-main-products.jpg" alt="Banner Image" class="banner-image"/>
-        <?php } ?>
-       
-        
-        
+       <?php }else{?>
+       		<img src="<?php echo '/wp-content/uploads/2013/11/img-main-support.jpg' ?>" alt="Banner Image Not Found" class="banner-image"/>
+       <?php }?>
   <?php }?>
   <br />
   
