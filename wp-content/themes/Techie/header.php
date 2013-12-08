@@ -122,6 +122,7 @@
         	'/danh-muc/may-xen-thanh-pham' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Máy xén thành phẩm'),
         	'/danh-muc/muc-in' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Mực in'),
         	'/danh-muc/linh-kien' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Linh kiện'),
+        	'/subscribe' => array('imageCorver'=>'/wp-content/uploads/2013/11/img-main-products.jpg','title'=>'Đăng ký nhận bản tin'),
         ); 
         
         ?>
