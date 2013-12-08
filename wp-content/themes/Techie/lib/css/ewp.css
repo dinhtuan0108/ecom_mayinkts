@@ -573,6 +573,7 @@ div.images {
     background-image: url("../images/nav-about.gif");
     width: 158px;
     margin-left: -1px !important;
+    border-radius: 0px 0px 10px 0px;
 }
 .page-products #gNavProducts a, .page-ss #gNavSs a, .page-support #gNavSupport a, .page-dl #gNavDl a, .page-about #gNavAbout a {
     background-position: left -142px;
