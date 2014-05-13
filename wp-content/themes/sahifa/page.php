@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<div class="content">
 		<?php tie_breadcrumbs() ?>
-		
+		<?php die; ?>
 		<?php if ( ! have_posts() ) : ?>
 			<div id="post-0" class="post not-found post-listing">
 				<h1 class="post-title"><?php _e( 'Not Found', 'tie' ); ?></h1>
@@ -66,5 +66,9 @@
 		<?php comments_template( '', true ); ?>
 	</div><!-- .content -->
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
+
+<?php if (!is_front_page()) {
+get_sidebar();
+} ?>
 <?php get_footer(); ?>

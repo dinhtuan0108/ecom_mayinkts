@@ -1,0 +1,217 @@
+/**
+*	Custom style
+*	Mayinkts site
+*	dinhtuan0108@gmail.com
+**/
+
+body{
+	background-color: #FFF;
+	background-image: none;
+	color: #333;
+	font-family: Helvetica,Arial,Verdana,sans-serif;
+	font-size: 13px;
+	
+}
+
+/* Header */
+
+.top-tag{
+	width: 100%;
+	height: 10px;
+	background-color: #004a99;
+}
+
+.top-nav{
+	background-color: none;
+}
+
+header#theme-header {
+	background:#FFF;
+	margin: 0px auto 25px;
+	position: relative;
+	width:1045px;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+/* Menu */
+#main-nav ul li {
+  border: none !important;
+  display:inline-block;
+  float:left;
+  font-size:13px;
+  position:relative;
+  text-transform: uppercase !important;
+}
+
+#main-nav ul li a{
+	border-left: none !important;
+	width: 100px;
+}
+
+#main-nav ul li a:hover{
+	width: 100px;
+	height: 52px;
+	margin-top: -5px;
+	background-color: #bd1220;
+}
+ 
+#main-nav {
+  background-color: #004a99 !important;
+  background-image: none;
+  border-bottom: none ;
+  margin:0 auto;
+  min-height:52px;
+  position:relative;
+  
+}
+
+#main-nav ul ul{
+	background-color: #BD1220!important;
+	
+}
+
+/** Custom css */
+#banner-sidebar{
+		clear:both;
+	  color:#FFFFFF;
+	  float:right;
+	  height:300px;
+	  margin-right:0;
+	  margin-top:-309px;
+	  position:relative;
+	  width:24%;
+}
+
+#banner-sidebar .title-sidebar{
+	background-color: #BD1220;
+	height: 10px;
+	color: #fff;
+	padding: 10px;
+}
+
+#banner-sidebar .title-item{
+	background-color: #004A99;
+	height: 10px;
+	color: #fff;
+	padding: 10px;
+}
+
+#banner-sidebar .content-slider-bar{
+	color: #000 !important;
+}
+#sidebar-home {
+	float: right;
+	width: 42%;
+}
+
+.content-home {
+	float: left;
+	width: 57% !important;
+}
+
+#banner-sidebar .content-banner-sidebar{
+	color: #000 !important;
+}
+
+.slides img {
+width: 786px !important;
+height: 301px!important;
+display: block;
+}
+
+#metaslider_10{
+	width: 786px;
+	height: 310px;
+}
+
+/**
+* Home sidebar
+*/
+.contact-us-title{
+	background-image:url(../images/call-us.jpg);
+	width: 100%;
+	height: 38px; 
+}
+
+.check-us-out{
+	background-image:url(../images/check-us-out.jpg);
+	width: 100%;
+	height: 38px; 
+}
+
+.contact-us-title{
+	background-image:url(../images/call-us.jpg);
+	width: 100%;
+	height: 38px; 
+}
+
+.contact-us-title{
+	background-image:url(../images/call-us.jpg);
+	width: 100%;
+	height: 38px; 
+}
+
+.sidebar-text {
+	color:
+}
+
+/* Sub page */
+
+#sidebar {
+	float: left;
+	width: 230px;
+}
+
+.content {
+float: right;
+width: 806px;
+}
+section {
+	display: block;
+}
+
+#content-area-footer-2 {
+background-color: #004a99;
+height: 85px;
+text-align: center;
+width: 1024px;
+margin: 0 auto;
+}
+
+.footer-content {
+background-color: #004a99;
+color: #ffffff;
+float: left;
+font-size: 11px;
+line-height: 14px;
+padding: 10px 0px 15px 35px;
+text-align: left;
+width: 450px;
+}
+
+.footer-bottom{
+	height: 30px;
+	background-color: #BD1220;
+	margin: 0px auto;
+	text-align: center;
+	color: #fff;
+	width: 1024px;
+}
+
+footer#theme-footer {
+position: relative;
+color: #ddd;
+background: #E4E4E4;
+padding: 20px 0;
+margin-top: 20px;
+width: 1024px;
+margin: 3px auto;
+border: none !important;
+}
+ul li.menu-item:{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+

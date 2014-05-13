@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 /***************************************
 	Theme Name: Sahifa
 	Theme URI: http://themes.tielabs.com/sahifa/
@@ -332,7 +332,6 @@ header#theme-header:after, #signup_form:after, #buddypress:after, #main-nav:afte
 	margin:0 auto;
 	background:url(images/main-menu-bg.png) repeat-x top;
 	min-height:52px;
-	border-bottom:5px solid #F88C00 ;
 	position: relative;
 }
 	#main-nav  .menu-alert{
@@ -399,7 +398,7 @@ header#theme-header:after, #signup_form:after, #buddypress:after, #main-nav:afte
 			z-index: 99999;
 			float: left;
 			border-top: 2px solid #F88C00;
-			background: #2d2d2d !important;
+			background: #BD1220;
 			-webkit-box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.2);
 			box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.2);
 			-webkit-border-bottom-right-radius: 3px;
@@ -466,12 +465,7 @@ header#theme-header:after, #signup_form:after, #buddypress:after, #main-nav:afte
 		#main-nav  ul li.current-menu-item a, #main-nav ul li.current-menu-item a:hover,
 		#main-nav  ul li.current-menu-parent a, #main-nav ul li.current-menu-parent a:hover,
 		#main-nav  ul li.current-page-ancestor a, #main-nav ul li.current-page-ancestor a:hover{
-			background:#F88C00;
-			text-shadow:0 1px 1px rgba(0,0,0,.6);
-			color:#FFF;
-			height:52px;
-			line-height:52px;
-			border-left:0 none !important;
+			
 		}
 		#main-nav  ul.sub-menu li.current-menu-item,#main-nav  ul.sub-menu li.current-menu-item a,
 		#main-nav li.current-menu-item ul.sub-menu a,#main-nav  ul.sub-menu li.current-menu-parent,
@@ -479,13 +473,13 @@ header#theme-header:after, #signup_form:after, #buddypress:after, #main-nav:afte
 		#main-nav  ul.sub-menu li.current-page-ancestor,#main-nav  ul.sub-menu li.current-page-ancestor a,
 		#main-nav li.current-page-ancestor ul.sub-menu a{height:auto !important; line-height: 12px;}
 		#main-nav  ul li.menu-item-home a{
-            background-image: url(images/home.png)!important;
+            
             background-repeat: no-repeat!important;
             background-position: center -44px;
 			text-indent:-9999px;
 			height: 52px;
 			width: 35px;
-			padding: 0 10px;
+			
 		}
 		#main-nav  ul li.menu-item-home a .sub-indicator{ display: none;}
 		#main-nav  ul li.menu-item-home.current-menu-item a{background-position:center 13px;}
@@ -576,8 +570,8 @@ header#theme-header:after, #signup_form:after, #buddypress:after, #main-nav:afte
 	#main-nav ul > li.parent-list:hover > a:after {
 		content:"";
 		position:absolute;
-		left:20px;
-		top:40px;
+		
+
 		border-width:0 8px 8px;
 		border-style:solid;
 		border-color:transparent transparent #F88C00;
@@ -585,7 +579,7 @@ header#theme-header:after, #signup_form:after, #buddypress:after, #main-nav:afte
 		width:0;
 		z-index:999;
 	}
-		#main-nav ul > li.current-menu-item.parent-list:hover > a:after {top:45px;}
+		#main-nav ul > li.current-menu-item.parent-list:hover > a:after {}
 
 
 	#main-nav ul ul > li.parent-list:hover > a:after , #main-nav ul li .mega-menu-block ul.sub-menu:before{ display: none;}
@@ -647,18 +641,14 @@ header#theme-header.center-logo .logo, header#theme-header.center-logo .ads-top{
 /* Content  Column */
 #main-content{
 	background: #FFF;
-	margin: 20px auto 25px;
-	position: relative;
-	-moz-box-shadow: 0 0 5px #cacaca;
-	-webkit-box-shadow:  0 0 5px #CACACA;
-	box-shadow: 0 0 5px #CACACA;
-	padding:20px 24px;
-	width:997px;
+	margin: -20px auto 0px;
+	padding: 0;
+	width: 1045px;
 }
 #main-content:after{display: block;visibility: hidden;clear: both;	height: 0;content: ".";}
 
 .full-width{background-image: none;	}
-.content {float: left;width: 660px;}
+.content {float: left;width: 806px;}
 #crumbs, .woocommerce-breadcrumb { margin-bottom:10px; clear:both; padding-bottom: 5px; border-bottom: 1px solid #DDD;}
 div.not-found{padding:20px;}
 .full-width .content ,body.error404  .content{	width:auto;	float:none;}
@@ -678,15 +668,7 @@ div.not-found{padding:20px;}
 		.stripe-line{background:url(images/stripe.png) ;height:12px;overflow:hidden;margin-top:5px;}
 		.cat-box .entry{font-size: 12px;}
 	.cat-box-content, #sidebar .widget-container, .post-listing  {
-		background: white;
-		border-radius: 1px;
-		-moz-border-radius: 1px;
-		-webkit-border-radius: 1px;
-		box-shadow:  0 1px 3px 0 #b5b5b5;
-		-moz-box-shadow: 0 1px 3px 0 #b5b5b5;
-		-webkit-box-shadow:  0 1px 3px 0 #b5b5b5;
-		border: 1px solid #DDD;
-		border-bottom:4px solid #F88C00;
+		
 	}
 		.cat-box li.first-news .inner-content{padding:20px;overflow:hidden;}
 	p.post-meta{color:#aaa;margin:7px 0;font-size:85%;}
@@ -937,7 +919,7 @@ div.not-found{padding:20px;}
 		
 /* Single Post Styles */	
 .post-listing.post { margin-bottom:20px;}
-	.post-inner{padding:20px;}
+	.post-inner{padding:0px;}
 	.single-post-thumb{	margin:0 -1px !important; line-height:0 !important;}
 		.single-post-thumb img{width:100%; height:auto;}
 	.head-lightbox a{cursor: -webkit-zoom-in;cursor: -moz-zoom-in;cursor: zoom-in;}
@@ -945,13 +927,11 @@ div.not-found{padding:20px;}
 	.single-post-caption{background: #eee;text-align: center;color: #555;padding: 5px;font-size: 90%;}
 		.post-title {
 			font-family: BebasNeueRegular,arial,Georgia, serif;
-			margin-bottom:10px;
 			font-size: 28px;
+			display: none;
 		}
 		.post-inner p.post-meta{
-			border-bottom:1px solid #f2f2f2;
-			padding-bottom:5px;
-			margin-bottom:10px;
+
 		}
 			p.post-meta span{display:inline-block;margin-right:10px;}
 		.item-list {
@@ -1266,7 +1246,7 @@ blockquote:before {content: '\275d'; color: #555; font-size: 55px; width: 55px; 
 .post-next a:after{content: '»';	right:0;}
 
 /* Sidebar */
-#sidebar {float: right;width: 310px;}
+#sidebar {float: right;width: 230px;}
 .full-width #sidebar{display:none !important;}
 .sidebar-left #sidebar{float:left;}
 .sidebar-left .content{float:right;}
@@ -1974,7 +1954,7 @@ html[xmlns] .slides {display: block;}
 .slider-caption h2, .slider-caption p{padding: 0 15px;}
 
 /*small*/
-.content .flexslider { width:660px; height:330px;}
+.content .flexslider { width:786px !important; height:301px;}
 .content .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden; position:relative; height:330px;}
 .content .flexslider .slides img {width: 100%; display: block;}
 .content .slider-caption h2 a,.content .slider-caption h2{font-size: 22px;}

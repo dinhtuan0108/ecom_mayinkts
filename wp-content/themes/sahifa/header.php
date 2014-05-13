@@ -20,6 +20,7 @@
 		  $center_logo =''; if( tie_get_option( 'center_logo' )) $center_logo = ' center-logo';
 	?>
 		<header id="theme-header" class="theme-header<?php echo $full_width.$center_logo ?>">
+			<div class="top-tag"></div>
 			<?php if(!tie_get_option( 'top_menu' )): ?>
 			<div class="top-nav">
 			<?php if(tie_get_option( 'top_date' )):

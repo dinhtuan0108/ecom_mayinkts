@@ -21,6 +21,11 @@ define( 'MTHEME_NOTIFIER_CACHE_INTERVAL', 43200 );
 
 // WooCommerce
 define('WOOCOMMERCE_USE_CSS', false);
+
+// Mayinkts CSS file
+wp_register_style('custom_style', get_template_directory_uri() . '/css/custom_style.css');
+wp_enqueue_style('custom_style');
+
 add_action('woocommerce_before_main_content', 'tie_woocommerce_wrapper_start', 22);
 function tie_woocommerce_wrapper_start() {
 	echo '<div class="post-listing"><div class="post-inner">';
@@ -133,6 +138,35 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' ) {
 
 add_action( 'import_done', 'wordpress_importer_init' );
 
+/**
+ * Register Home side
+*/
 
+register_sidebar( array(
+    'name'         => __( 'Right Hand Sidebar' ),
+    'id'           => 'sidebar-1',
+    'description'  => __( 'Widgets in this area will be shown on the right-hand side.' ),
+    'before_title' => '<h1>',
+    'after_title'  => '</h1>',
+) );
+
+/**
+ * Add slider sidebar shortcode
+ */
+ 
+ add_shortcode('slider-sidebar','slider_sidebar_shortcode');
+ 
+ function slider_sidebar_shortcode() {
+ 	$str = '
+ 	<div id="banner-sidebar">
+	<p class="title-sidebar">Tin mới</p>
+	<p class="title-item">Nội dung tin tức</p>
+	<p class="content-slider-bar">U.S. Paper Industry Gets an Unexpected Boost (The Wall Street Journal)
+	Americans renew their relationship with paper, ditching the cheap stuff for reading news to buy expensive stock for photo-based</p>
+	</div>';
+	
+	return $str;
+	
+ }
 
 ?>
